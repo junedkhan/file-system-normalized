@@ -1,0 +1,55 @@
+.file-system-container {
+  width: 400px;
+}
+
+.file-system-header {
+  border: 1px solid black;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+
+  .header {
+    cursor: pointer;
+  }
+}
+
+.items-container {
+  border: 1px solid black;
+  padding: 5px;
+  height: 500px;
+  overflow-y: auto;
+}
+
+.item-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-type {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.controls-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+
+  div {
+    cursor: pointer;
+  }
+}
+
+.hide-controls {
+  display: none;
+}
+
+.item-container:hover .controls-container {
+  display: flex;
+}
+
+.children-items {
+  margin-left: 10px;
+}
